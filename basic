@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> My Little JavaScript </title>
+    </head>
+    <body>
+        <H1>Rekenen</H1>
+        
+        <script> // code
+
+        var twee = 2
+        var drie = 3
+
+        var totaal = twee + drie
+
+        totaal++
+
+        document.write("En dat is " + totaal + ".");
+
+        </script>
+    </body>
+</html>
+
