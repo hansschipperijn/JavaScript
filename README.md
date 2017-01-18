@@ -1,2 +1,2 @@
 # JavaScript
-JavaScript werk
+JavaScript werk stukjes
