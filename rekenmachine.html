@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    <head>
+        <title>reken machine</title>
+         <script>
+            function optellen(){
+                var getalEen = document.getElementById('getalEen').value
+                var getalTwee = document.getElementById('getalTwee').value
+                var totaal = Number(getalEen) + Number(getalTwee);
+                alert(totaal);
+            }
+        </script>
+    </head>
+    <body>
+        <H1>Reken machine</H1>
+        We gaan optellen:<BR>
+        <form>
+            <input type="text" id="getalEen" size=6><br />
+            <input type="text" id="getalTwee" size=6><br />
+            <button type="button" onclick=optellen()>optellen</button>
+        </form>
+    </body>
+</html>

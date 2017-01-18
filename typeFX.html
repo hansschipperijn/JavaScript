@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<style>
+    #tekstVenster {
+        background-color:pink;
+        width:600px;
+        height:200px;
+        padding:12px;
+        color:#FFF;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size:36px;
+        line-height:1.5em;
+    }
+</style>
+</head>
+<body>
+
+<div id="tekstVenster"></div>
+
+<script>
+    var myString = "Je noemt je mooi, noemt je lekker. Maar je loopt achter, dus koop een wekker!";
+    var myArray = myString.split("");
+    var loopTimer;
+    function frameLooper() {
+
+        if(myArray.length > 0) {
+            document.getElementById("tekstVenster").innerHTML += myArray.shift();
+        } else {
+            clearTimeout(loopTimer); 
+            return false;
+        }   
+
+        loopTimer = setTimeout('frameLooper()',70);
+    }
+
+    frameLooper();
+</script>
+
+</body>
+</html>
