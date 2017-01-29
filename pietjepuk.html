@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pietje Puk</title>
+</head>
+<body>
+<script>
+
+    for (var getal=1;getal<=100;getal++) {
+
+        if (getal%3==0&&getal%5==0) {
+            document.write(getal + " is zelfs een <strong>Pietje Puk</strong><BR>");
+        } else if (getal%3==0) {
+            document.write(getal + " is een Pietje, deelbaar door 3<BR>");
+        } else if (getal%5==0) {
+            document.write(getal + " is een Puk, deelbaar door 5<BR>");
+        } else {
+            document.write(getal + " is niet deelbaar door 3 of 5<BR>");
+        }
+    }
+</script>
+</body>
+</html>
+
